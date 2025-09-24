@@ -13,7 +13,7 @@ export default function VoteWidget({ id, score, className }) {
     >
       <button
         onClick={() => dispatchVotes(upvoteComment(id))}
-        className={`cursor-pointer p-4 transition duration-300 hover:brightness-50 ${votes[id]?.vote === 'upvote' ? 'brightness-50' : 'brightness-100'}`}
+        className={`cursor-pointer p-2 transition duration-300 hover:brightness-50 sm:p-4 ${votes[id]?.vote === 'upvote' ? 'brightness-50' : 'brightness-100'}`}
       >
         <img src={iconPlus} alt="upvote" className="h-auto max-w-4" />
       </button>
@@ -22,7 +22,7 @@ export default function VoteWidget({ id, score, className }) {
       </span>
       <button
         onClick={() => dispatchVotes(downvoteComment(id))}
-        className={`cursor-pointer p-4 transition duration-300 hover:brightness-50 ${votes[id]?.vote === 'downvote' ? 'brightness-50' : 'brightness-100'}`}
+        className={`cursor-pointer p-2 transition duration-300 hover:brightness-50 sm:p-4 ${votes[id]?.vote === 'downvote' ? 'brightness-50' : 'brightness-100'}`}
       >
         <img src={iconMinus} alt="downvote" className="h-auto max-w-4" />
       </button>
