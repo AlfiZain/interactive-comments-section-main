@@ -42,7 +42,6 @@ export function editComment({ id, content }) {
 }
 
 export function deleteComment(id) {
-  console.log('deleteComment');
   return {
     type: DELETE_COMMENT,
     payload: { id },
@@ -77,7 +76,6 @@ export function editReply({ id, content }) {
 }
 
 export function deleteReply({ commentId, replyId }) {
-  console.log('deleteReply');
   return {
     type: DELETE_REPLY,
     payload: {
