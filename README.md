@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/interactive-comments-section-with-react-tailwindcss-and-vitest-9J_EMWNfS4](https://www.frontendmentor.io/solutions/interactive-comments-section-with-react-tailwindcss-and-vitest-9J_EMWNfS4)
+- Live Site URL: [https://interactive-comments-section-main-alfi.vercel.app/](https://interactive-comments-section-main-alfi.vercel.app/)
 
 ## My process
 
