@@ -1,15 +1,15 @@
 import { DOWNVOTE, UPVOTE } from '../constants/votesTypes';
 
-export function upvoteComment(commentId) {
+export function upvoteComment(id) {
   return {
     type: UPVOTE,
-    payload: { commentId },
+    payload: { id },
   };
 }
 
-export function downvoteComment(commentId) {
+export function downvoteComment(id) {
   return {
     type: DOWNVOTE,
-    payload: { commentId },
+    payload: { id },
   };
 }

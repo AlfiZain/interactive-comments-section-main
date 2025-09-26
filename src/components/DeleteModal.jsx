@@ -8,12 +8,19 @@ export default function DeleteModal({ ids }) {
   const { dispatchCommentInteraction } = useCommentInteraction();
 
   const handleDeleteClick = () => {
-    console.log(ids);
+    console.log('delete clicked');
     if (ids.replyId) {
+      console.log(
+        'ids.commentId: ',
+        ids.commentId,
+        'ids.replyId: ',
+        ids.replyId,
+      );
       dispatchComment(
         deleteReply({ commentId: ids.commentId, replyId: ids.replyId }),
       );
     } else {
+      console.log('ids.commentId: ', ids.commentId);
       dispatchComment(deleteComment(ids.commentId));
     }
     dispatchCommentInteraction(closeAll());

@@ -51,6 +51,7 @@ export default function ReplyInput({
       />
       <button
         onClick={handleSubmitReply}
+        aria-label="Submit Reply"
         className="cursor-pointer self-end rounded-md bg-Purple-600 px-4 py-2 text-White transition duration-300 hover:brightness-200 lg:self-start"
       >
         REPLY

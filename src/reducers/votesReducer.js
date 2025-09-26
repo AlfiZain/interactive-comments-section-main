@@ -1,10 +1,9 @@
 import { DOWNVOTE, UPVOTE } from '../constants/votesTypes';
 
 export function votesReducer(votes, action) {
-  const currentVote = votes[action.payload.commentId]?.vote || 'none';
-
   switch (action.type) {
     case UPVOTE: {
+      const currentVote = votes[action.payload.id]?.vote || 'none';
       let newVote;
       let offset;
       if (currentVote === 'none') {
@@ -20,11 +19,12 @@ export function votesReducer(votes, action) {
 
       return {
         ...votes,
-        [action.payload.commentId]: { vote: newVote, offset },
+        [action.payload.id]: { vote: newVote, offset },
       };
     }
 
     case DOWNVOTE: {
+      const currentVote = votes[action.payload.id]?.vote || 'none';
       let newVote;
       let offset;
       if (currentVote === 'none') {
@@ -40,7 +40,7 @@ export function votesReducer(votes, action) {
 
       return {
         ...votes,
-        [action.payload.commentId]: { vote: newVote, offset },
+        [action.payload.id]: { vote: newVote, offset },
       };
     }
 

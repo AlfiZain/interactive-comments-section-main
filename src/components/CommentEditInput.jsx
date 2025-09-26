@@ -35,9 +35,11 @@ export default function CommentEditInput({ id, content, replyingTo = '' }) {
         className="min-h-32 w-full cursor-pointer resize-none rounded-md px-4 py-2 ring-1 ring-Grey-100 outline-none hover:ring-2 hover:ring-Grey-500 focus:ring-2 focus:ring-Grey-500"
         value={replyingTo ? `@${replyingTo} ${editContent}` : editContent}
         onChange={handleEditChange}
+        placeholder="Update your comment..."
       />
       <button
         onClick={handleUpdate}
+        aria-label="Submit Update"
         className="cursor-pointer self-end rounded-md bg-Purple-600 px-4 py-2 text-White transition duration-300 hover:brightness-200"
       >
         UPDATE

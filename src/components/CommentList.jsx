@@ -6,8 +6,8 @@ export default function CommentList() {
 
   return (
     <section className="space-y-4">
-      {comments.map((comment, index) => (
-        <CommentItem key={index} {...comment} />
+      {comments?.map((comment) => (
+        <CommentItem key={comment.id} {...comment} />
       ))}
     </section>
   );
